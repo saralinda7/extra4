@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Inscrição Oficina de Tecnologia</title>
+</head>
+<body>
+
+    <h1>Oficina de Tecnologia</h1>
+    <p>Venha aprender sobre programação e tecnologia na nossa oficina prática. Faça sua inscrição abaixo!</p>
+
+    <!-- Imagem da oficina -->
+    <figure>
+        <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=500" alt="Pessoa no computador" width="400">
+        <figcaption>Alunos praticando no evento.</figcaption>
+    </figure>
+
+    <h2>Informações Gerais</h2>
+    <ul>
+        <li>Chegar com 15 minutos de antecedência.</li>
+        <li>Trazer caderno ou notebook.</li>
+        <li>Haverá certificado para quem participar de tudo.</li>
+    </ul>
+
+    <h2>Horários das Atividades</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Horário</th>
+                <th>Atividade</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>08:00 - 10:00</td>
+                <td>HTML Básico</td>
+            </tr>
+            <tr>
+                <td>10:00 - 12:00</td>
+                <td>Criando Formulários</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2">Carga horária total: 4 horas</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <h2>Formulário de Inscrição</h2>
+
+    <form action="" method="post">
+
+        <label for="nome">Nome:</label><br>
+        <input type="text" id="nome" name="nome" required><br><br>
+
+        <label for="email">E-mail:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="senha">Senha:</label><br>
+        <input type="password" id="senha" name="senha" required><br><br>
+
+        <label>Turno:</label><br>
+        <input type="radio" id="manha" name="turno" value="manha" required>
+        <label for="manha">Manhã</label><br>
+        <input type="radio" id="tarde" name="turno" value="tarde">
+        <label for="tarde">Tarde</label><br><br>
+
+        <label>Áreas de interesse:</label><br>
+        <input type="checkbox" id="web" name="interesse" value="web">
+        <label for="web">Desenvolvimento Web</label><br>
+        <input type="checkbox" id="python" name="interesse" value="python">
+        <label for="python">Python</label><br><br>
+
+        <label for="curso">Escolha o curso:</label><br>
+        <select id="curso" name="curso" required>
+            <option value="">Selecione...</option>
+            <option value="html">HTML e CSS</option>
+            <option value="js">JavaScript</option>
+        </select><br><br>
+
+        <label for="mensagem">Mensagem:</label><br>
+        <textarea id="mensagem" name="mensagem" rows="4" cols="30"></textarea><br><br>
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+
+    </form>
+
+    <p>Para mais informações, acesse o site do <a href="https://developer.mozilla.org" target="_blank">MDN Web Docs</a>.</p>
+
+</body>
+</html>
